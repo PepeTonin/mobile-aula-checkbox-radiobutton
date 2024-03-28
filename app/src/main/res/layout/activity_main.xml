@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha uma cor"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVerde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verde"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAzul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Azul"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVermelho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vermelho"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="enviar"
+        android:text="Enviar"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textoResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonMasc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feminino" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSexoNaoInformado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nao Informar" />
+    </RadioGroup>
+</LinearLayout>
